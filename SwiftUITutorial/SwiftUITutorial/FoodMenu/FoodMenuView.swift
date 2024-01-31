@@ -8,10 +8,34 @@
 import SwiftUI
 
 struct FoodMenuCell: View {
+	private static let restrictionColors: [String: Color] = ["D": .purple, "G": .black, "N": .red, "S": .blue, "V": .green]
+	
 	let menuItem: MenuItem
 	var body: some View {
-		Text(menuItem.name)
+		HStack {
+			Image(menuItem.thumbnailImageName, bundle: nil)
+				.clipShape(Circle())
+			
+			VStack(alignment: .leading) {
+				Text(menuItem.name)
+					.font(.title)
+				Text(menuItem.price, format: .currency(code: "USD"))
+			}
 			.padding()
+			
+			Spacer()
+			
+			ForEach(menuItem.restrictions, id: \.self) { restriction in
+				Text(restriction.rawValue)
+					.font(.caption)
+					.fontWeight(.black)
+					.padding(5)
+					.background(FoodMenuCell.restrictionColors[restriction.rawValue, default: .black])
+					.clipShape(Circle())
+					.foregroundStyle(.white)
+				
+			}
+		}
 	}
 }
 
@@ -27,12 +51,20 @@ struct FoodMenuView: View {
 				List(menuSection, id: \.name) { section in
 					Section(section.name) {
 						ForEach(section.items, id: \.name) { item in
-							FoodMenuCell(menuItem: item)
+							// 1.1 Create a navigation link and attach menu item to it.
+							NavigationLink(value: item) {
+								FoodMenuCell(menuItem: item)
+							}
 						}
 					}
 				}
 				.listStyle(.grouped)
 				.navigationTitle("Food Menu")
+				// 1.2 Create a navigation destination that tells SwiftUI -
+				// When you're asked to navigate to a MenuItem, load MenuItemView with that value.
+				.navigationDestination(for: MenuItem.self) { item in
+					MenuItemView(menuItem: item)
+				}
 			case .failed(let error):
 				Text(error.localizedDescription)
 					.padding()

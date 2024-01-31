@@ -19,6 +19,7 @@
 		C8603FC82B6A815C00C130E5 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8603FC72B6A815C00C130E5 /* MenuItem.swift */; };
 		C8603FCB2B6A83B600C130E5 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = C8603FCA2B6A83B600C130E5 /* menu.json */; };
 		C8603FCD2B6A8C9E00C130E5 /* FoodMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8603FCC2B6A8C9E00C130E5 /* FoodMenuViewModel.swift */; };
+		C8603FCF2B6AA02000C130E5 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8603FCE2B6AA02000C130E5 /* MenuItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C8603FC72B6A815C00C130E5 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		C8603FCA2B6A83B600C130E5 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		C8603FCC2B6A8C9E00C130E5 /* FoodMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMenuViewModel.swift; sourceTree = "<group>"; };
+		C8603FCE2B6AA02000C130E5 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				C8603FC52B6A7FD800C130E5 /* FetchMenuModelManager.swift */,
 				C8603FC72B6A815C00C130E5 /* MenuItem.swift */,
 				C8603FCC2B6A8C9E00C130E5 /* FoodMenuViewModel.swift */,
+				C8603FCE2B6AA02000C130E5 /* MenuItemView.swift */,
 			);
 			path = FoodMenu;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				C8603FC62B6A7FD800C130E5 /* FetchMenuModelManager.swift in Sources */,
 				C8603FC42B6A7F8800C130E5 /* FoodMenuView.swift in Sources */,
 				C8603FCD2B6A8C9E00C130E5 /* FoodMenuViewModel.swift in Sources */,
+				C8603FCF2B6AA02000C130E5 /* MenuItemView.swift in Sources */,
 				C8603F972B6A7D3E00C130E5 /* SwiftUITutorialApp.swift in Sources */,
 				C8603FC82B6A815C00C130E5 /* MenuItem.swift in Sources */,
 			);

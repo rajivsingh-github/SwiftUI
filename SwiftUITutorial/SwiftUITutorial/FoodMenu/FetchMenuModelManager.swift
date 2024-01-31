@@ -18,7 +18,7 @@ protocol FetchMenuModelManagerProtocol {
 
 struct FetchMenuModelManager: FetchMenuModelManagerProtocol {
 	func fetchFoodMenu() async throws -> [MenuSection] {
-		guard let url = URL(string: "https://www.example.com") else {
+		guard let _ = URL(string: "https://www.example.com") else {
 			throw FetchFoodMenuError.badURL
 		}
 		

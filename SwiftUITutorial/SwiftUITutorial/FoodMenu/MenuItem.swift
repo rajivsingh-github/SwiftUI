@@ -7,16 +7,24 @@
 
 import Foundation
 
+enum FoodRestriction: String, Decodable {
+	case gluten = "G"
+	case vegan = "V"
+	case nuts = "N"
+	case dairyFree = "D"
+	case sugar = "S"
+}
+
 struct MenuSection: Decodable {
 	let name: String
 	let items: [MenuItem]
 }
 
-struct MenuItem: Decodable {
+struct MenuItem: Decodable, Hashable {
 	let name: String
 	let photoCredit: String
 	let price: Int
-	var restrictions: [String]
+	var restrictions: [FoodRestriction]
 	var description: String
 	
 	var mainImageName: String {
