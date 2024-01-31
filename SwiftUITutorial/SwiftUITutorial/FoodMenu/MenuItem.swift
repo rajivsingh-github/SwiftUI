@@ -24,6 +24,7 @@ struct MenuItem: Decodable, Hashable {
 	let name: String
 	let photoCredit: String
 	let price: Int
+	
 	var restrictions: [FoodRestriction]
 	var description: String
 	
@@ -33,5 +34,9 @@ struct MenuItem: Decodable, Hashable {
 	
 	var thumbnailImageName: String {
 		"\(mainImageName)-thumb"
+	}
+	
+	var rating: Int {
+		return 3
 	}
 }

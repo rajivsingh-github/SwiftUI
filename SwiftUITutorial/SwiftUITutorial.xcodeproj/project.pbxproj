@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C85EBCE62B6AD09E00C8CF6A /* MenuItemRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85EBCE52B6AD09E00C8CF6A /* MenuItemRatingView.swift */; };
 		C8603F972B6A7D3E00C130E5 /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8603F962B6A7D3E00C130E5 /* SwiftUITutorialApp.swift */; };
 		C8603F992B6A7D3E00C130E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8603F982B6A7D3E00C130E5 /* ContentView.swift */; };
 		C8603F9B2B6A7D3F00C130E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8603F9A2B6A7D3F00C130E5 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C85EBCE52B6AD09E00C8CF6A /* MenuItemRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRatingView.swift; sourceTree = "<group>"; };
 		C8603F932B6A7D3E00C130E5 /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8603F962B6A7D3E00C130E5 /* SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		C8603F982B6A7D3E00C130E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				C8603FC72B6A815C00C130E5 /* MenuItem.swift */,
 				C8603FCC2B6A8C9E00C130E5 /* FoodMenuViewModel.swift */,
 				C8603FCE2B6AA02000C130E5 /* MenuItemView.swift */,
+				C85EBCE52B6AD09E00C8CF6A /* MenuItemRatingView.swift */,
 			);
 			path = FoodMenu;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				C8603FCF2B6AA02000C130E5 /* MenuItemView.swift in Sources */,
 				C8603F972B6A7D3E00C130E5 /* SwiftUITutorialApp.swift in Sources */,
 				C8603FC82B6A815C00C130E5 /* MenuItem.swift in Sources */,
+				C85EBCE62B6AD09E00C8CF6A /* MenuItemRatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

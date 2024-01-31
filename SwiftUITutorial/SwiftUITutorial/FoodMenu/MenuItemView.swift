@@ -12,13 +12,17 @@ struct MenuItemView: View {
 	
 	var body: some View {
 		VStack {
-			ZStack(alignment: .bottomTrailing) {
-				Image(menuItem.mainImageName)
-				Text(menuItem.photoCredit)
-					.font(.caption)
-					.background(.black)
-					.foregroundStyle(.white)
-					.padding()
+			VStack(alignment: .trailing) {
+				ZStack(alignment: .bottomTrailing) {
+					Image(menuItem.mainImageName)
+					Text(menuItem.photoCredit)
+						.font(.caption)
+						.background(.black)
+						.foregroundStyle(.white)
+						.padding()
+				}
+				MenuItemRatingView(rating: menuItem.rating)
+					.padding([.trailing])
 			}
 			Text(menuItem.description)
 				.padding()
