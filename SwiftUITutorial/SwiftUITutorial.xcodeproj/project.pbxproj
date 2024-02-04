@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C831417C2B70433C00660815 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83141752B70433C00660815 /* EventView.swift */; };
+		C831417D2B70433C00660815 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83141772B70433C00660815 /* Authentication.swift */; };
+		C831417E2B70433C00660815 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83141792B70433C00660815 /* Binding.swift */; };
+		C831417F2B70433C00660815 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831417B2B70433C00660815 /* CaptionedPhoto.swift */; };
 		C85EBCE62B6AD09E00C8CF6A /* MenuItemRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85EBCE52B6AD09E00C8CF6A /* MenuItemRatingView.swift */; };
 		C8603F972B6A7D3E00C130E5 /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8603F962B6A7D3E00C130E5 /* SwiftUITutorialApp.swift */; };
 		C8603F992B6A7D3E00C130E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8603F982B6A7D3E00C130E5 /* ContentView.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C83141752B70433C00660815 /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		C83141772B70433C00660815 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		C83141792B70433C00660815 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		C831417B2B70433C00660815 /* CaptionedPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionedPhoto.swift; sourceTree = "<group>"; };
 		C85EBCE52B6AD09E00C8CF6A /* MenuItemRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRatingView.swift; sourceTree = "<group>"; };
 		C8603F932B6A7D3E00C130E5 /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8603F962B6A7D3E00C130E5 /* SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialApp.swift; sourceTree = "<group>"; };
@@ -85,6 +93,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C83141742B70433C00660815 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				C83141752B70433C00660815 /* EventView.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		C83141762B70433C00660815 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C83141772B70433C00660815 /* Authentication.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C83141782B70433C00660815 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				C83141792B70433C00660815 /* Binding.swift */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		C831417A2B70433C00660815 /* CaptionedPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				C831417B2B70433C00660815 /* CaptionedPhoto.swift */,
+			);
+			path = CaptionedPhoto;
+			sourceTree = "<group>";
+		};
 		C8603F8A2B6A7D3E00C130E5 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +148,10 @@
 		C8603F952B6A7D3E00C130E5 /* SwiftUITutorial */ = {
 			isa = PBXGroup;
 			children = (
+				C83141762B70433C00660815 /* Authentication */,
+				C83141782B70433C00660815 /* Binding */,
+				C831417A2B70433C00660815 /* CaptionedPhoto */,
+				C83141742B70433C00660815 /* Event */,
 				C8603FC22B6A7F7500C130E5 /* FoodMenu */,
 				C8603F962B6A7D3E00C130E5 /* SwiftUITutorialApp.swift */,
 				C8603F982B6A7D3E00C130E5 /* ContentView.swift */,
@@ -298,6 +342,10 @@
 				C8603F992B6A7D3E00C130E5 /* ContentView.swift in Sources */,
 				C8603FC62B6A7FD800C130E5 /* FetchMenuModelManager.swift in Sources */,
 				C8603FC42B6A7F8800C130E5 /* FoodMenuView.swift in Sources */,
+				C831417E2B70433C00660815 /* Binding.swift in Sources */,
+				C831417F2B70433C00660815 /* CaptionedPhoto.swift in Sources */,
+				C831417D2B70433C00660815 /* Authentication.swift in Sources */,
+				C831417C2B70433C00660815 /* EventView.swift in Sources */,
 				C8603FCD2B6A8C9E00C130E5 /* FoodMenuViewModel.swift in Sources */,
 				C8603FCF2B6AA02000C130E5 /* MenuItemView.swift in Sources */,
 				C8603F972B6A7D3E00C130E5 /* SwiftUITutorialApp.swift in Sources */,
